@@ -25,13 +25,13 @@ export default class Sitemapper {
    *
    * @example let sitemap = new Sitemapper({
    *                                 url: 'http://wp.seantburke.com/sitemap.xml',
-   *                                 timeout: 15000
+   *                                 timeout: 2147483647
    *                               });
    */
   constructor(options) {
     const settings = options || {};
     this.url = settings.url;
-    this.timeout = settings.timeout || 15000;
+    this.timeout = settings.timeout || 2147483647;
     this.timeoutTable = {};
   }
 
